@@ -1,7 +1,7 @@
 # Snake Game
 
-Front - Vanilla js
-Backend - Express
+#### Front - Vanilla js
+#### Backend - Express
 
 ### 1.5x speed play video
 ![snake game](./introduce/snakegame.gif)
