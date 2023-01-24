@@ -103,7 +103,7 @@ function eatApple() {
     snake.tail[snake.tail.length - 1].x == apple.x &&
     snake.tail[snake.tail.length - 1].y == apple.y
   ) {
-    if (snake.tail.length % 5 === 0) {
+    if (snake.tail.length % 5 == 0 && snake.tail.length / 5 <= level) {
       eat.currentTime = 0;
       playClip(levelUp);
       level += 1;
@@ -135,7 +135,7 @@ function draw() {
   }
   canvasContext.font = "1rem Arial";
   canvasContext.fillStyle = "#FFFFFF";
-  canvasContext.fillText("Your Level: " + level, canvas.width / 3, 20);
+  canvasContext.fillText("Your Level: " + level, canvas.width / 2.5, 20);
 
   canvasContext.font = "1rem Arial";
   canvasContext.fillStyle = "#00FF42";
