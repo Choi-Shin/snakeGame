@@ -1,1 +1,2 @@
-# snakeGame
+# vanilla.js Snake Game
+
