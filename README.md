@@ -11,7 +11,7 @@ npm run dev
 ```
 
 - keydown handling
-  - when the user presses a key with a function
+  - when the user presses a key with the function
   - javascript handles state
 - mouse position
   - change cursor if mouse position x,y on button
@@ -24,6 +24,5 @@ npm run dev
 - ranking system
   - get data from `public/data/ranking.json`
   - if result greater than the ranking data
-  - post data using express
-  - and modify `public/data/ranking.json`
+  - Data is posted and edited using Express
 
