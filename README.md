@@ -26,3 +26,5 @@ npm run dev
   - Only the top 10 scores are saved and updated
   - Data is posted and edited using Express
 
+- sound effect
+  - Objects such as eating an apple, leveling up and game over make the sound effects 
