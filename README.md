@@ -23,6 +23,6 @@ npm run dev
 
 - ranking system
   - get data from `public/data/ranking.json`
-  - if result greater than the ranking data
+  - Only the top 10 scores are saved and updated
   - Data is posted and edited using Express
 
