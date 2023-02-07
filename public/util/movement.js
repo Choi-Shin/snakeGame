@@ -54,10 +54,10 @@ async function loop() {
         count += 1;
       }
     }
+    let date = new Date();
+    const day = dayFormatting(date, "-");
+    const time = timeFormatting(date, ":");
     if (count > 0) {
-      let date = new Date();
-      const day = dayFormatting(date, "-");
-      const time = timeFormatting(date, ":");
       rankingData.splice(rankingData.length - count, 0, {
         score: snake.tail.length - 1,
         name: name,
@@ -66,6 +66,14 @@ async function loop() {
       if (count != 1 && rankingData.length > 10) {
         rankingData.pop();
       }
+      let data = { ranking: rankingData };
+      await postRanking("http://localhost:3000/rank", data);
+    } else if (count == 0 && rankingData.length < 10) {
+      rankingData.push({
+        score: snake.tail.length - 1,
+        name: name,
+        date: `${day} ${time}`,
+      });
       let data = { ranking: rankingData };
       await postRanking("http://localhost:3000/rank", data);
     }
