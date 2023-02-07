@@ -1,7 +1,7 @@
 # Snake Game
 
-Front - Vanilla js
-Backend - Express
+#### Front - Vanilla js
+#### Backend - Express
 
 ### 1.5x speed play video
 ![snake game](./introduce/snakegame.gif)
@@ -11,7 +11,7 @@ npm run dev
 ```
 
 - keydown handling
-  - when the user presses a key with a function
+  - when the user presses a key with the function
   - javascript handles state
 - mouse position
   - change cursor if mouse position x,y on button
@@ -23,7 +23,8 @@ npm run dev
 
 - ranking system
   - get data from `public/data/ranking.json`
-  - if result greater than the ranking data
-  - post data using express
-  - and modify `public/data/ranking.json`
+  - Only the top 10 scores are saved and updated
+  - Data is posted and edited using Express
 
+- sound effect
+  - Objects such as eating an apple, leveling up and game over make the sound effects 
