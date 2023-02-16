@@ -20,6 +20,7 @@ app
   .route("/rank")
   .get((req, res) => {
     const data = require("./public/data/ranking.json");
+    console.log(data);
     res.setHeader("Content-Type", "application/json");
     return res.send(data);
   })

@@ -42,9 +42,9 @@ export function gameLoop(state) {
 }
 
 async function loop() {
-  json = await getRanking("/rank");
-  let rankingData = sortByScore(json["ranking"]);
   if (gameState == false) {
+    json = await getRanking("/rank");
+    let rankingData = sortByScore(json["ranking"]);
     eat.currentTime = 0;
     levelUp.currentTime = 0;
     playClip(gameover);
