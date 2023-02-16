@@ -28,7 +28,7 @@ app
     const data = req.body;
     console.log(data);
     fs.writeFile(
-      "public/data/ranking.json",
+      "./public/data/ranking.json",
       JSON.stringify(data),
       "utf8",
       (err) => err && console.log(err)
