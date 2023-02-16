@@ -1,5 +1,5 @@
 export async function getCredit(url) {
-  const response = await fetch(url, {
+  const response = fetch(url, {
     method: "GET",
   })
     .then((data) => {

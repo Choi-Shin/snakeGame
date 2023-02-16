@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.get("/", (req, res) => {
   res.statusCode = 200;
   res.setHeader("Content-Type", "text/html");
-  res.sendFile(path.join(__dirname + "/public/snake.html"));
+  res.sendFile(path.join(__dirname + "/public/index.html"));
 });
 
 app
@@ -49,4 +49,4 @@ app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
 
-module.exports = app;
+// module.exports = app;
