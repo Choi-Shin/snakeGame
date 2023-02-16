@@ -42,7 +42,7 @@ export function gameLoop(state) {
 }
 
 async function loop() {
-  json = await getRanking("http://localhost:3000/rank");
+  json = await getRanking("/rank");
   let rankingData = sortByScore(json["ranking"]);
   if (gameState == false) {
     eat.currentTime = 0;
