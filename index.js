@@ -26,6 +26,7 @@ app
   .post((req, res) => {
     console.log("post rank");
     const data = req.body;
+    console.log(data);
     fs.writeFile(
       "public/data/ranking.json",
       JSON.stringify(data),
