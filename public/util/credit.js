@@ -1,7 +1,7 @@
 import { createRect, makeBevelBox, writeText } from "./functions/functions.js";
 import { getCredit } from "/credit.js";
 const canvas = document.getElementById("canvas");
-let data = await getCredit("http://localhost:3000/credit")
+let data = await getCredit("/credit")
   .then((data) => {
     return data;
   })

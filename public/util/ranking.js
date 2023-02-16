@@ -24,7 +24,7 @@ function show() {
 }
 
 async function draw() {
-  let data = await getRanking("http://localhost:3000/rank")
+  let data = await getRanking("/rank")
     .then((data) => {
       return data;
     })

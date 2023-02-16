@@ -67,7 +67,7 @@ async function loop() {
         rankingData.pop();
       }
       let data = { ranking: rankingData };
-      await postRanking("http://localhost:3000/rank", data);
+      await postRanking("/rank", data);
     } else if (count == 0 && rankingData.length < 10) {
       rankingData.push({
         score: snake.tail.length - 1,
@@ -75,7 +75,7 @@ async function loop() {
         date: `${day} ${time}`,
       });
       let data = { ranking: rankingData };
-      await postRanking("http://localhost:3000/rank", data);
+      await postRanking("/rank", data);
     }
     gameOver(snake.tail.length - 1);
     return;

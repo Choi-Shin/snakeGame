@@ -1,6 +1,1 @@
-{
-  "ranking": [
-    { "score": 15, "name": "aaaa", "date": "2023-2-16 14:52:57" },
-    { "score": 5, "name": "dd", "date": "2023-2-7 14:08:08" }
-  ]
-}
+{"ranking":[{"score":15,"name":"aaaa","date":"2023-2-16 14:52:57"},{"score":5,"name":"dd","date":"2023-2-7 14:08:08"},{"score":0,"name":"dasdf","date":"2023-2-16 22:06:06"},{"score":0,"name":"dadsf","date":"2023-2-16 22:07:37"}]}
