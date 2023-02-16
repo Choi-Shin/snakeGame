@@ -25,7 +25,7 @@ var eat = new Audio("/sound/eating.wav");
 var levelUp = new Audio("/sound/levelup.wav");
 var gameover = new Audio("/sound/gameover2.wav");
 export function gameLoop(state) {
-  if (!name) {
+  while (!name) {
     name = prompt("닉네임을 입력해주세요!");
   }
   if (state === "start") {
