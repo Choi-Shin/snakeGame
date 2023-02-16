@@ -41,6 +41,8 @@ app.get("/credit", (req, res) => {
   return res.send(data);
 });
 
-app.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+// app.listen(port, hostname, () => {
+//   console.log(`Server running at http://${hostname}:${port}/`);
+// });
+
+module.exports = app;
